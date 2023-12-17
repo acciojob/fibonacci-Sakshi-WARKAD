@@ -1,9 +1,11 @@
 function fibonacci(num) {  
-	let sum =0;
-	for(let i=0; i<=num; i++){
-		sum = sum + num;
+	let firstNum = 0;
+	let secondNum = 1;
+	let result = firstNum + secondNum;
+	for(let i=1; i<=num; i++){
+		result += i; 
 	}
-	return sum;
+	return result;
 }
 
 module.exports = fibonacci;
